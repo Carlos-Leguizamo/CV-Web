@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1">
+  <title>Document</title>
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora" rel="stylesheet">
+  <!--Styles Css-->
+  <link rel="stylesheet" href="./Assets/styles/scroll.css">
+  <link rel="stylesheet" href="./Assets/icon/fontawesome-free-6.4.2-web/css/all.min.css">
+  <link rel="stylesheet" href="./Assets/styles/reset.css">
+  <link rel="stylesheet" href="./Assets/styles/styles.css">
+  <link rel="stylesheet" href="./Assets/styles/responsive.css">
+</head>
+<body>
+  <!--Layout Principal-->
+  <div class="layout">
+    <!--Barra lateral-->
+    <aside class="layout__aside">
+      <div class="user-info__container">
+        <section class="aside__user-info">
+          <!--Informacion de usuario -->
+          <div class="user-info__general">
+            <div class="user-info__container-img">
+              <img src="./Assets/img/3x4 vv.jpg" alt="Foto de perfil" class="user-info__img">
+            </div>
+            <h2 class="user-info__name">Carlos Leguizamo</h2>
+            <h4 class="user-info__job">Desarrollador web</h4>
+          </div>
+          <!--Menu de navegacion-->
+          <input type="checkbox" class="bottom__menu bottom__menu-color">
+          <nav class="layout__menu">
+            <ul class="menu_list">
+              <li class="menu_option">
+                <a href="./index.html" class="menu__link">
+                  <i class="fa-solid fa-house menu__icon menu__icon--menu"></i>
+                  <span class="menu_overlay">Home</span>
+                </a>
+              </li>
+              <li class="menu_option">
+                <a href="./sobre-mi.html" class="menu__link">
+                  <i class="fa-solid fa-user menu__icon  menu__icon--menu  menu__icon--select"></i>
+                  <span class="menu_overlay menu_overlay--select-responsive">Sobre mi</span>
+                </a>
+              </li>
+<!--               
+              <li class="menu_option">
+                <a href="./portafolio.html" class="menu__link">
+                  <i class="fa-solid fa-briefcase menu__icon menu__icon--menu"></i>
+                  <span class="menu_overlay">Portafolio</span>
+                </a>
+              </li>
+              <li class="menu_option">
+                <a href="./blog.html" class="menu__link">
+                  <i class="fa-solid fa-book menu__icon menu__icon--menu"></i>
+                  <span class="menu_overlay">Blog</span>
+                </a>
+              </li>
+              -->
+              <li class="menu_option">
+                <a href="./contacta-me.html" class="menu__link">
+                  <i class="fa-solid fa-envelope menu__icon menu__icon--menu"></i>
+                  <span class="menu_overlay">Contacto</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!--Link redes sociales-->
+          <div class="user-info__user-links">
+            <ul class="user-links__social">
+              <li class="social__options">
+                <a href="https://www.linkedin.com/in/carlos-eduardo-leguizam%C3%B3-ram%C3%ADrez-0a70251b0/">
+                  <i class="fa-brands fa-linkedin menu__icon"></i>
+                </a>
+              </li>
+              <!-- <li class="social__options">
+                <a href="https://github.com/YeridStick">
+                  <i class="fa-brands fa-github menu__icon"></i>
+                </a>
+              </li> -->
+              <li class="social__options">
+                <a href="https://instagram.com/tato.carl?igshid=YTQwZjQ0NmI0OA==">
+                  <i class="fa-brands fa-instagram menu__icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Bottom Curriculum-->
+          <div class="user-info__bottom-info">
+            <a href="#" class="bottom-info__btn-cv">Descargar CV</a>
+          </div>
+          <br>
+          <!--Footer-->
+          <footer class="user-info__footer">
+            &copy; <span id="year"></span> Carlos Leguizamo
+            <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
+          </footer>
+        </section>
+      </div>
+    </aside>
+    <!--Contenedor Principal-->
+    <main class="layout__content">
+      <section class=".content__pages content__about-me">
+        <heder class="about-me_header">
+          <h2 class="about__tittle">
+            Sobre <span class="tittle__color">mi</span> 
+          </h2>
+        </heder>
+        <section class="about__persola-info">
+          <article class="personal-info__bio">
+            <p class="personal-info__descritcion">
+              Mi nombre es Carlos Eduardo Leguizamo Ramirez, soy apasionado
+               por el arte de la tecnologia en nustras vidas. Estoy iniciando 
+               en este mundo tan maravilloso como lo es el <strong>Desarrollo
+              Web</strong> del cual tengo previos conociminetos, los cuales
+              los refuerzo dia a dia con aprendizaje tanto autonomo como 
+             por medio de insituciones.
+            </p>
+          </article>
+          <div class="personal-info__data">
+            <ul class="personal-info__list">
+              <li class="personal-info__opction">
+                <span class="personal-info__tittle">Edad:</span>
+                <span class="personal-info__value">18</span>
+              </li>
+              <li class="personal-info__opction">
+                <span class="personal-info__tittle">País:</span>
+                <span class="personal-info__value">Colombia</span>
+              </li>
+              <li class="personal-info__opction">
+                <span class="personal-info__tittle">Dirección:</span>
+                <span class="personal-info__value">Cra 9 # 5-01</span>
+              </li>
+              <li class="personal-info__opction">
+                <span class="personal-info__tittle">Correo:</span>
+                <span class="personal-info__value">tato2005leguizamo@gmail.com</span>
+              </li>
+              <li class="personal-info__opction">
+                <span class="personal-info__tittle">Telefono:</span>
+                <span class="personal-info__value">+57 3155109453</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="about__servicios">
+          <header class="servicios__header">
+            <h3 class="servicios_tittle">
+              Lo que <span class="tittle__color">hago</span>
+            </h3>
+          </header>
+          <div class="servicios__container">
+            <article class="servicios__servicios">
+              <div class="servicios__info-container">
+                <div class="servicos_header">
+                  <div class="servicios__icon">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                  <h4 class="content__tittle">
+                    Programación web
+                  </h4>
+                </div>
+                <div class="servicios__content">
+                  <p class="content__descripcion">
+                    Tengo experiencia en el desarrollo de aplicaciones web, utilizando tecnologías como laravel, java, C#, C++ y css. 
+                    Me esfuerzo por crear un software de calidad y seguro el cual satisfasca las necesidades y expectativas de los clientes.
+                    Actualmente me estoy preparando en el desarrollo front-ed, y reforzando mis conocimientos del desarrollo back-end.
+                  </p>
+                </div>
+              </div>
+              <div class="servicios__skills">
+                <h5 class="content__tittle tittle__color">
+                  Habilidades
+                </h5>
+                <div class="skils__container">
+                  <div class="skils__container-bar">
+                    <div class="skils__descripcion">
+                      <p class="skils__descripcion-text">HTML/CSS</p><span class="skils__porcentaje">85%</span>
+                    </div>
+                    <div class="skils__bar">
+                      <div class="skils__progres desarrollo-progres-1"></div>
+                    </div>
+                  </div>
+                  <div class="skils__container-bar">
+                    <div class="skils__descripcion">
+                      <p class="skils__descripcion-text">Java</p><span class="skils__porcentaje">60%</span>
+                    </div>
+                    <div class="skils__bar">
+                      <div class="skils__progres desarrollo-progres-2"></div>
+                    </div>
+                  <div class="skils__container-bar">
+                    <div class="skils__descripcion">
+                      <p class="skils__descripcion-text">JavaScript</p><span class="skils__porcentaje">60%</span>
+                    </div>
+                    <div class="skils__bar">
+                      <div class="skils__progres desarrollo-progres-3"></div>
+                    </div>
+                  </div>
+                  <div class="skils__container-bar">
+                    <div class="skils__descripcion">
+                      <p class="skils__descripcion-text">Laravel</p><span class="skils__porcentaje">60%</span>
+                    </div>
+                    <div class="skils__bar">
+                      <div class="skils__progres desarrollo-progres-4"></div>
+                    </div>
+                  </div>
+                  <div class="skils__container-bar">
+                    <div class="skils__descripcion">
+                      <p class="skils__descripcion-text">C# - C++</p><span class="skils__porcentaje">70%</span>
+                    </div>
+                    <div class="skils__bar">
+                      <div class="skils__progres desarrollo-progres-5"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- <article class="servicios__servicios">
+              <div class="servicios__info-container">
+                <div class="servicos_header">
+                  <div class="servicios__icon">
+                    <i class="fa-solid fa-pen"></i>
+                  </div>
+                  <h4 class="content__tittle">
+                    Diseñador
+                  </h4>
+                </div>
+                <div class="servicios__content">
+                  <p class="content__descripcion">
+                    Como diseñador, ofrezco servicios de asesoramiento de marca y creación de imagen corporativa, como logos y panfletos. Mi objetivo es ayudar a mis clientes a comunicar su identidad y valores de forma efectiva y creativa. 
+                  </p>
+                </div>
+              </div>
+              <div class="servicios__skills">
+                <h5 class="content__tittle tittle__color">
+                  Skills
+                </h5>
+                <div class="skils__container">
+                  <div class="skils__container-bar">
+                    <div class="skils__descripcion">
+                      <p class="skils__descripcion-text">Diseñador<span class="tittle__color">Web</span></p><span class="skils__porcentaje">65%</span>
+                    </div>
+                    <div class="skils__bar">
+                      <div class="skils__progres diseño-progres-1"></div>
+                    </div>
+                  </div>
+                  <div class="skils__container-bar">
+                    <div class="skils__descripcion">
+                      <p class="skils__descripcion-text">Diseñador<span class="tittle__color">Logos</span></p><span class="skils__porcentaje">85%</span>
+                    </div>
+                    <div class="skils__bar">
+                      <div class="skils__progres diseño-progres-2"></div>
+                    </div>
+                  </div>
+                  <div class="skils__container-bar">
+                    <div class="skils__descripcion">
+                      <p class="skils__descripcion-text">Diseñador<span class="tittle__color">Baners</span></p><span class="skils__porcentaje">70%</span>
+                    </div>
+                    <div class="skils__bar">
+                      <div class="skils__progres diseño-progres-3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article> -->
+          </div>
+        </section>
+        <section class="about__conocimiento">
+          <p class="conocimiento__elemet">Programación</p>
+          <p class="conocimiento__elemet">Desarrollo web</p>
+          <p class="conocimiento__elemet">Diseño web</p>
+        </section>
+        <section class="about__edu">
+          <header class="edu__header">
+            <h2 class="edu_tittle">Formación <span class="tittle__color">Académica</span></h2>
+          </header>
+          <div class="edu__container">
+            <div class="container__info">
+              <div class="edu_icon">
+                <img class="edu_img" src="./Assets/img/USCO_Negativo.png" alt="Universidad Surcolombiana">
+              </div>
+              <div class="edu__info">
+                <h4 class="content__tittle">
+                  Desarrollo de software
+                </h4>
+                <p>2022 - Actualidad</p>
+              </div>
+            </div>
+            <div class="container__info">
+              <div class="edu_icon">
+                <img class="edu_img" src="./Assets/img/freecodecamp-icon-256x256-v507fyug.png" alt="FreeCodeCamp">
+                <!--<h2 class="edu__centro-formacion">FreeCodeCamp</h2>-->
+              </div>
+              <div class="edu__info">
+                <h4 class="content__tittle">
+                 C# Fundamnetal con Microsoft
+                </h4>
+                <p>Septiembre 24 del 2023 <a class="tittle__color" href="https://www.freecodecamp.org/certification/carlos-leguizamo/foundational-c-sharp-with-microsoft"><i class="fa-solid fa-arrow-right"></i></a></p>
+              </div>
+            </div>
+            <div class="container__info">
+              <div class="edu_icon">
+                <img class="edu_img" src="./Assets/img/Logotipo_SENA.jpg" alt="Sena">
+                <!--<h2 class="edu__centro-formacion">FreeCodeCamp</h2>-->
+              </div>
+              <div class="edu__info">
+                <h4 class="content__tittle">
+                 Tecnico en Sistemas
+                </h4>
+                <p>Diciembre 03 del 2021 <a class="tittle__color" href=""><i class="fa-solid fa-arrow-right"></i></a></p>
+              </div>
+          </div>
+          
+        </section>
+        <!-- <section class="about__reseñas"></section> -->
+        <div class="about_bottom">
+          <a href="./contacta-me.html" class="bottom_contacta-me">Contacta me</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
